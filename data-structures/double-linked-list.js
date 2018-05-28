@@ -18,7 +18,13 @@ class DoubleLinkedList {
   }
 
   remove(node) {
-
+    if(this.next === node) {
+      node.next.prev = this;
+      this.next = node.next;
+      return;
+    }else {
+      this.next.remove(node)
+    }
   }
 }
 
