@@ -13,14 +13,20 @@ class BinarySearchTree {
         this.left.add(node);
       }else {
         this.left = node;
+        return;
       }
     }else if(node.value > this.value) {
       if(this.right) {
         this.right.add(node);
       }else {
         this.right = node;
+        return;
       }
     }
+  }
+
+  remove(node) {
+    if(node)
   }
 }
 
