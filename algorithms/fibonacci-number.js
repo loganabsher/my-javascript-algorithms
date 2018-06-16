@@ -19,5 +19,3 @@ function fibonacciNumber(limit) {
 
   return fibSequence;
 }
-
-console.log(fibonacciNumber(10));
